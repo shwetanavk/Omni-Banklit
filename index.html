@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <nav>
+      <nav class="nav">
         <div class="menu-logo">
           <svg
             class="menu-icon"
@@ -45,7 +45,7 @@
             <a class="nav-link" href="#section--2"> Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#section--3">Playback</a>
+            <a class="nav-link" href="#section--3">Video</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#section--4">Operations</a>
@@ -118,7 +118,7 @@
             class="badge-slogan"
           />
           <div class="refresh-inner">
-            <div class="refresh-icon">
+            <button class="refresh-icon">
               <svg
                 width="31"
                 height="34"
@@ -134,7 +134,7 @@
                   fill="currentColor"
                 ></path>
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -186,24 +186,24 @@
       </div>
 
       <div class="operations">
-        <div class="operations__tab-container">
+        <div class="operations-tab-container">
           <button
-            class="btn operations__tab operations__tab--1 operations__tab--active"
+            class="btn operations-tab operations-tab--1 operations-tab--active"
             data-tab="1"
           >
             <span>01</span>Instant Transfers
           </button>
-          <button class="btn operations__tab operations__tab--2" data-tab="2">
+          <button class="btn operations-tab operations-tab--2" data-tab="2">
             <span>02</span>Instant Loans
           </button>
-          <button class="btn operations__tab operations__tab--3" data-tab="3">
+          <button class="btn operations-tab operations-tab--3" data-tab="3">
             <span>03</span>Instant Closing
           </button>
         </div>
         <div
-          class="operations__content operations__content--1 operations__content--active"
+          class="operations-content operations-content--1 operations-content--active"
         >
-          <div class="operations__icon operations__icon--1">
+          <div class="operations-icon operations-icon--1">
             <svg
               class="w-6 h-6"
               fill="none"
@@ -219,7 +219,7 @@
               ></path>
             </svg>
           </div>
-          <h5 class="operations__header">
+          <h5 class="operations-header">
             Tranfser money to anyone, instantly! No fees, no BS.
           </h5>
           <p>
@@ -230,13 +230,24 @@
           </p>
         </div>
 
-        <div class="operations__content operations__content--2">
-          <div class="operations__icon operations__icon--2">
-            <!-- <svg>
-              <use xlink:href="img/icons.svg#icon-home"></use>
-            </svg> -->
+        <div class="operations-content operations-content--2">
+          <div class="operations-icon operations-icon--2">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="{2}"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
           </div>
-          <h5 class="operations__header">
+          <h5 class="operations-header">
             Buy a home or make your dreams come true, with instant loans.
           </h5>
           <p>
@@ -246,13 +257,24 @@
             anim id est laborum.
           </p>
         </div>
-        <div class="operations__content operations__content--3">
-          <div class="operations__icon operations__icon--3">
-            <!-- <svg>
-                <use xlink:href="img/icons.svg#icon-user-x"></use>
-              </svg> -->
+        <div class="operations-content operations-content--3">
+          <div class="operations-icon operations-icon--3">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="{2}"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
           </div>
-          <h5 class="operations__header">
+          <h5 class="operations-header">
             No longer need your account? No problem! Close it instantly.
           </h5>
           <p>
