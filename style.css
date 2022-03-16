@@ -63,11 +63,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8rem;
+  height: 6rem;
   width: 100%;
   padding: 0 6rem;
   z-index: 100;
-  /* position: fixed; */
+  position: fixed;
+  background: white;
 }
 
 .nav.sticky {
@@ -473,9 +474,17 @@ h4 {
 }
 
 .stories {
-  background-color: #f1f3f5;
+  /* background-color: #f1f3f5; */
   height: 70rem;
   position: relative;
+}
+
+.ohhh {
+  height: 100%;
+  width: 100%;
+  display: absolute;
+  z-index: -1;
+  background-image: url('./images/0.jpg');
 }
 
 .image-1:hover {
