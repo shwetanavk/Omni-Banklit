@@ -158,9 +158,15 @@ const hoverImages = document.querySelectorAll('.imagehover');
 hoverImages.forEach(function (img, i) {
   img.addEventListener('mouseover', function (e) {
     e.preventDefault();
-    console.log(img);
+    // console.log(img);
 
     section2.style.background = `linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.342)),  url('./images/${i}.jpg')`;
+    section2.style.backgroundRepeat = 'no-repeat';
+    section2.style.backgroundSize = 'cover';
+    section2.style.display = 'absolute';
+    hoverImages.forEach(el => {
+      if (el !== img) el.style.opacity = 0;
+    });
   });
 });
 
@@ -169,30 +175,10 @@ hoverImages.forEach(function (img) {
     e.preventDefault();
     console.log(img);
 
-    // section2.style.backgroundImage = 'url(./OmNibanklit-black.png)';
     section2.style.background = 'linear-gradient(#f1f3f5, #f1f3f5)';
+
+    hoverImages.forEach(el => {
+      if (el !== img) el.style.opacity = 1;
+    });
   });
 });
-// console.log(hoverImages);
-// // hoverImages;
-// // const siblings = link.closest('.nav').querySelectorAll('.nav-link');
-// const imageHover = function (e, opacity) {
-//   if (e.target.classList.contains('hover-images')) {
-//     const link = e.target;
-
-//     const siblings = link
-//       .closest('#section--2')
-//       .querySelectorAll('.hover-images');
-
-//     siblings.forEach(el => {
-//       if (el !== link) el.style.opacity = opacity;
-//     });
-//   }
-// };
-
-// nav.addEventListener('mouseover', function (e) {
-//   handleHover(e, 0.5);
-// });
-// nav.addEventListener('mouseout', function (e) {
-//   handleHover(e, 1);
-// });
